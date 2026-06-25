@@ -158,6 +158,37 @@ background:var(--headGrad);color:var(--goldL);border:1px solid rgba(184,134,11,.
 font-size:20px;cursor:pointer;display:none;z-index:120;align-items:center;justify-content:center;}
 #backTop.show{display:flex;}
 
+/* 影音膠囊 · toc-card 右下角 */
+.toc-card{padding-bottom:40px;}
+.toc-yt{position:absolute;right:16px;bottom:12px;display:inline-flex;align-items:center;gap:5px;
+font-family:"Noto Sans TC",sans-serif;font-size:12.5px;letter-spacing:1px;color:#6e4e12;
+background:linear-gradient(135deg,#f1dea8,#e6c878);
+border:1px solid #c9a23f;border-radius:14px;padding:4px 13px;cursor:pointer;
+box-shadow:0 1px 3px rgba(120,80,20,.2);transition:all .2s;}
+.toc-yt:hover{background:linear-gradient(135deg,#b8860b,#d4a84b);color:#fffdf7;border-color:#b8860b;
+transform:translateY(-1px);box-shadow:0 3px 9px rgba(184,134,11,.4);}
+
+/* 影音膠囊 · 章節頭 */
+.ch-yt{display:inline-flex;align-items:center;gap:7px;margin-top:16px;
+font-family:"Noto Sans TC",sans-serif;font-size:14px;letter-spacing:1.5px;color:#2a2012;
+background:linear-gradient(135deg,#e8cd83,#d4a84b);border:1px solid #b8860b;border-radius:22px;
+padding:8px 22px;box-shadow:0 2px 9px rgba(0,0,0,.22);transition:all .2s;}
+.ch-yt:hover{background:linear-gradient(135deg,#f2da90,#e0b85a);transform:translateY(-1px);
+box-shadow:0 4px 14px rgba(184,134,11,.45);}
+
+/* 主頁固定浮動影音鈕 · 隨閱讀品自動切換 */
+.wy-video-fab{position:fixed;right:22px;bottom:80px;z-index:121;display:none;align-items:center;
+gap:8px;font-family:"Noto Sans TC",sans-serif;font-size:14px;letter-spacing:1px;color:#1e1a14;
+text-decoration:none;background:linear-gradient(135deg,#e8cd83,#d4a84b);border:1px solid #b8860b;
+border-radius:24px;padding:10px 18px;box-shadow:0 4px 16px rgba(120,80,20,.4);
+transition:all .25s;max-width:280px;}
+.wy-video-fab:hover{background:linear-gradient(135deg,#f2da90,#e0b85a);transform:translateY(-2px);
+box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.wy-video-fab .wy-vf-icon{font-size:12px;}
+.wy-video-fab .wy-vf-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+@media print{.wy-video-fab,.toc-yt,.ch-yt{display:none!important;}}
+@media(max-width:900px){.wy-video-fab{right:12px;bottom:74px;font-size:13px;padding:8px 14px;max-width:62vw;}}
+
 @media(max-width:900px){
   #sb{transform:translateX(-100%);transition:transform .3s;}
   #sb.open{transform:translateX(0);}
@@ -292,10 +323,10 @@ font-size:20px;cursor:pointer;display:none;z-index:120;align-items:center;justif
 <h2 class="toc-title" data-wytext="kMGQRIbhxkmN+eg="></h2>
 <div class="toc-desc" data-wytext="kvSagNn5jeTlkdb5Tu+AEsranZPBrYHy+4Du15LA2Yu2rNe+9xG1zg2B5NKN8v+Q//Q="></div>
 <div class="toc-grid">
-<a class="toc-card" data-ch="1" href="#ch-1"><span class="toc-num" data-wytext="k8Gt"></span><span class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsiTlcjQs5LqrFgDCEdXWAYBFAJBF0FZD10SRA8HDhYHG14DDQdGABpGSA5FWhRYEAQeQVICGgIBQ1pSW0oeRU1NHVRDRI3GwpL3zYm3s9eUyNXK7A2m1lqAzseTy/6KlZraivbZ/9XF78ST6uaMycNJQV5aU0EaDw=="></span></a>
-<a class="toc-card" data-ch="2" href="#ch-2"><span class="toc-num" data-wytext="k8Oh"></span><span class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsSwucjSlpLfr4Hy+1QLFlpSSR1AVl5BVkIDAEEBXFgLBggaHk8YTEUaAFtFEgFZSQwPHAwAXFcTAUNDH1oTWBARWV5VSlhLWpLMwYieoteywRG1zg2C/+qN8sSS29ZO74ASyt26k8GAjMb6VEYXGA0ZAhM="></span></a>
-<a class="toc-card" data-ch="3" href="#ch-3"><span class="toc-num" data-wytext="k8Gk"></span><span class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsSvjcX2mZLdt4Pf/4zR7Z375YqVvtqi39f46cT/wp/W/oLt/5DQutKhrEpTBVYTWBIXCQUIVR8BF0FSDw8VXhsWX14XGxpBSVgYEBZZGl9YAlQTUBYCDhQcRBMQBRIGWQ0GHUYTSZC2x4fi+43d/oTLwQ31hQ2fsfeRkO2Fw+OB2tpMt9kN04qkkojvnZTvicTHSabCTJHUod+Zi5GJyp+h5V1VGwQFGQBL"></span></a>
-<a class="toc-card" data-ch="4" href="#ch-4"><span class="toc-num" data-wytext="kuK2"></span><span class="toc-name" data-wytext="kNWBgfrhjfrlVa7CTsW4m8XgmJ/YoYHy+1QLFlpSSR1AVl5BVkIDAEEBXFgLBggaHk8YTEUaAFtFEgFZSQwPHAwAXFcTAUNDH1oTWBARWV5VSlhLWpHW+YaGkden7dTawcr+5ZLPyoLS553Iu9+Vv1bzwFnI//qT7+SC9/qdxbsLHV4bUBsVEw=="></span></a>
+<a class="toc-card" data-ch="1" href="#ch-1"><span class="toc-num" data-wytext="k8Gt"></span><span class="toc-name" data-wytext="kNWBgNn6jfrlVa7CTsiTlcjQs5LqrFgDCEdXWAYBFAJBF0FZD10SRA8HDhYHG14DDQdGABpGSA5FWhRYEAQeQVICGgIBQ1pSW0oeRU1NHVRDRI3GwpL3zYm3s9eUyNXK7A2m1lqAzseTy/6KlZraivbZ/9XF78ST6uaMycNJQV5aU0EaDw=="></span><span class="toc-yt" data-wytext="le+bRITH2YD7xg==" data-yt="https://youtu.be/B0M2NyKEqzU" role="link" tabindex="0" title="觀看本品影音說明"></span></a>
+<a class="toc-card" data-ch="2" href="#ch-2"><span class="toc-num" data-wytext="k8Oh"></span><span class="toc-name" data-wytext="kNWBgNv2jfrlVa7CTsSwucjSlpLfr4Hy+1QLFlpSSR1AVl5BVkIDAEEBXFgLBggaHk8YTEUaAFtFEgFZSQwPHAwAXFcTAUNDH1oTWBARWV5VSlhLWpLMwYieoteywRG1zg2C/+qN8sSS29ZO74ASyt26k8GAjMb6VEYXGA0ZAhM="></span><span class="toc-yt" data-wytext="le+bRITH2YD7xg==" data-yt="https://youtu.be/-cubUIRGkFw" role="link" tabindex="0" title="觀看本品影音說明"></span></a>
+<a class="toc-card" data-ch="3" href="#ch-3"><span class="toc-num" data-wytext="k8Gk"></span><span class="toc-name" data-wytext="kNWBgNnzjfrlVa7CTsSvjcX2mZLdt4Pf/4zR7Z375YqVvtqi39f46cT/wp/W/oLt/5DQutKhrEpTBVYTWBIXCQUIVR8BF0FSDw8VXhsWX14XGxpBSVgYEBZZGl9YAlQTUBYCDhQcRBMQBRIGWQ0GHUYTSZC2x4fi+43d/oTLwQ31hQ2fsfeRkO2Fw+OB2tpMt9kN04qkkojvnZTvicTHSabCTJHUod+Zi5GJyp+h5V1VGwQFGQBL"></span><span class="toc-yt" data-wytext="le+bRITH2YD7xg==" data-yt="https://youtu.be/yTbhFlY0qg0" role="link" tabindex="0" title="觀看本品影音說明"></span></a>
+<a class="toc-card" data-ch="4" href="#ch-4"><span class="toc-num" data-wytext="kuK2"></span><span class="toc-name" data-wytext="kNWBgfrhjfrlVa7CTsW4m8XgmJ/YoYHy+1QLFlpSSR1AVl5BVkIDAEEBXFgLBggaHk8YTEUaAFtFEgFZSQwPHAwAXFcTAUNDH1oTWBARWV5VSlhLWpHW+YaGkden7dTawcr+5ZLPyoLS553Iu9+Vv1bzwFnI//qT7+SC9/qdxbsLHV4bUBsVEw=="></span><span class="toc-yt" data-wytext="le+bRITH2YD7xg==" data-yt="https://youtu.be/eMb5Pql6i4k" role="link" tabindex="0" title="觀看本品影音說明"></span></a>
 </div>
 </div>
 <section class="chapter" id="ch-1">
@@ -303,6 +334,7 @@ font-size:20px;cursor:pointer;display:none;z-index:120;align-items:center;justif
 <div class="ch-num" data-wytext="kvSagNn5jeTlkdb5Tu+AEsranZPBrYHy+w=="></div>
 <div class="ch-name" data-wytext="kt2Kgcf4jfrl"></div>
 <div class="ch-sub" data-wytext="ktaLg/rCj/PgkNXLipCiEu/BEZ/ejoLG8YzRyZ3L9Yalm9qm09j19sXYzg=="></div>
+<a class="ch-yt" data-wytext="le+bRIfmxIz39InI38SogQ==" href="https://youtu.be/B0M2NyKEqzU" rel="noopener" target="_blank"></a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -317,6 +349,7 @@ font-size:20px;cursor:pointer;display:none;z-index:120;align-items:center;justif
 <div class="ch-num" data-wytext="kvSagNn5jeTlkdb5Tu+AEsranZPDoYHy+w=="></div>
 <div class="ch-name" data-wytext="nv6mgcXdjc/mkP/0"></div>
 <div class="ch-sub" data-wytext="kNmZgtLvjfbTVa7CTsuposjtkZDOjkSjzUiOz/6IzcPFkLI="></div>
+<a class="ch-yt" data-wytext="le+bRIfmxIz39InI38SogQ==" href="https://youtu.be/-cubUIRGkFw" rel="noopener" target="_blank"></a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -331,6 +364,7 @@ font-size:20px;cursor:pointer;display:none;z-index:120;align-items:center;justif
 <div class="ch-num" data-wytext="kvSagNn5jeTlkdb5Tu+AEsranZPBpIHy+w=="></div>
 <div class="ch-name" data-wytext="nuGSjOHSjc3+ktLwipW+2rrm1c/wxevInOf5je7PkNC60aq+k4/gnL7l"></div>
 <div class="ch-sub" data-wytext="nuKOgvnpjNDvndLaTu+AEsT2sZ/EpIDY8YDXy1Wuwk7Jj7vJz6mTwKaM39VIq9NViM/ixZyUys6MkfWs"></div>
+<a class="ch-yt" data-wytext="le+bRIfmxIz39InI38SogQ==" href="https://youtu.be/yTbhFlY0qg0" rel="noopener" target="_blank"></a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -345,6 +379,7 @@ font-size:20px;cursor:pointer;display:none;z-index:120;align-items:center;justif
 <div class="ch-num" data-wytext="kvSagNn5jeTlkdb5Tu+AEsranZLitoHy+w=="></div>
 <div class="ch-name" data-wytext="n/aEjPfTgMjokP/0"></div>
 <div class="ch-sub" data-wytext="k8OhjMrcjeP/kMHNibez2orV19DyxcL3ks/7RLfbVYu2rNuq+9f178XP9w=="></div>
+<a class="ch-yt" data-wytext="le+bRIfmxIz39InI38SogQ==" href="https://youtu.be/eMb5Pql6i4k" rel="noopener" target="_blank"></a>
 </div>
 <div class="ch-body">
 <div class="bridge bridge-intro"><div class="bridge-label" data-wytext="keWBgfL7gM/lk/vd"></div>
@@ -359,6 +394,9 @@ font-size:20px;cursor:pointer;display:none;z-index:120;align-items:center;justif
 <div data-wy-notice="v2" data-wytext="Sx1EEkEJHBAIEFFXA0xPH1ofVQMRF1NXShgRXxgNBwlEWQgdVlACDUJfQ0RUDQ0DTAYaVFtXEFRSGBVCFltZDF0FTVgXVUtYXFlbQh4DSF5QTxgRXxkJARpIRR9eBlAUEEMDW0kYEV8YDQcJRFkfTxlFAxZAXlBKGBFfV1Kd0ZkX173nEZL4pVhOHgEfWpzN7YqWktSA0tT95sja1pXU5YLswpDhp9GkkZKJ95yl447G81UGB0NLiKWm1YD/2f/+yvjfnfz2i8ngkvSr0reckLnnnZD/iPv7iuT3UBEHWxdBWQ9dEkQPCQAIDwAKWBgaHhcGBl0OChQWQQsTQEtRBkIIQ1gWFQzL6p2R76qD48CN6e+R1s+JjaPag/bUyuDL8dWV1OWC2M2d0aPfj6SRqMuemPSGzcuG2O6EyOfKro7F3bqTxrCD9OOB6ceS2eWGpbDWkOrZ9/zExNqT6fpYFEwdHEhRDw8eRQMJXl5OVR8eE1sVGhtZQlBIWFIYFAIkIhINBwMCCRwZSFkdXRlCAwoPRBMfBFRGGwMaHkhZV19UEQQNVAgER0oKCxkDB1QOUwZMTgUVQlkBGQ5FDQEWAwcPWV5dQ0xfGBdIXwMVGg0BB0EXAVlDXUBMAAcBDQAODhwMAFVPF1YVAQJPTVwWC0oND0BYSVAFFE5MDUNTXxFUA0QPOwMWCQcPV1I1LUVSXEoBVB4OSApdVQlXh/XuSUFJXkQTSh4TEFta" style="margin:0;padding:30px 20px;background:#1e1a14;border-top:2px solid #b8860b;text-align:center;font-family:'Noto Sans TC','Microsoft JhengHei',sans-serif;font-size:13px;line-height:1.95;color:#c4a76c;letter-spacing:1px;"></div>
 </main>
 <button id="backTop" title="回到頂部">↑</button>
+<a class="wy-video-fab" href="#" id="wyVideoFab" rel="noopener" target="_blank" title="觀看本品影音說明">
+<span class="wy-vf-icon">▶</span><span class="wy-vf-text" id="wyVideoFabText"></span>
+</a>
 <script>
 var rpFill=document.getElementById('rpFill'),rpPct=document.getElementById('rpPct');
 function updateProgress(){
@@ -383,7 +421,9 @@ function setupFrame(f){var tries=0;function tick(){tries++;resizeFrame(f);
 document.querySelectorAll('iframe.ch-frame').forEach(setupFrame);
 var rzT;window.addEventListener('resize',function(){clearTimeout(rzT);
   rzT=setTimeout(resizeAllFrames,200);});
-document.addEventListener('click',function(e){var a=e.target;
+document.addEventListener('click',function(e){
+  if(e.target.closest&&e.target.closest('.toc-yt,.wy-video-fab,.wy-cplink'))return;
+  var a=e.target;
   while(a&&a.tagName!=='A')a=a.parentElement;if(!a)return;
   var h=a.getAttribute('href');if(!h||h.charAt(0)!=='#'||h.length<2)return;
   var id=h.substring(1);var el=document.getElementById(id);if(!el)return;
@@ -394,12 +434,26 @@ var _rt=0,_riv=setInterval(function(){_rt++;resizeAllFrames();
   if(_rt>50)clearInterval(_riv);},300);
 updateProgress();
 var items=[].slice.call(document.querySelectorAll('.sb-item'));
+// 各品影音
+var WY_VID={1:"https://youtu.be/B0M2NyKEqzU",2:"https://youtu.be/-cubUIRGkFw",3:"https://youtu.be/yTbhFlY0qg0",4:"https://youtu.be/eMb5Pql6i4k"};
+var WY_PNAME={1:"大如品",2:"釋大如品",3:"阿耨多羅三藐三菩提難得易得品",4:"菩薩行品"};
+var wyFab=document.getElementById('wyVideoFab'),wyFabTxt=document.getElementById('wyVideoFabText');
+function wyUpdateFab(cur){if(!wyFab)return;var m=/^ch-(\d+)$/.exec(cur||'');
+  if(m&&WY_VID[+m[1]]){var n=+m[1];wyFab.href=WY_VID[n];
+    if(wyFabTxt)wyFabTxt.textContent='本品影音 · '+WY_PNAME[n];wyFab.style.display='inline-flex';}
+  else{wyFab.style.display='none';}}
 function highlight(){var cur=null;
   document.querySelectorAll('.chapter').forEach(function(c){
     if(c.getBoundingClientRect().top<window.innerHeight*0.35)cur=c.id;});
   items.forEach(function(it){it.classList.toggle('active',
-    !!cur&&it.getAttribute('href')==='#'+cur);});}
+    !!cur&&it.getAttribute('href')==='#'+cur);});
+  wyUpdateFab(cur);}
 window.addEventListener('scroll',highlight,{passive:true});highlight();
+// toc-card 影音膠囊 → 開 YouTube
+document.addEventListener('click',function(e){var t=e.target;
+  while(t&&!(t.classList&&t.classList.contains('toc-yt')))t=t.parentElement;
+  if(!t)return;e.preventDefault();e.stopPropagation();
+  var u=t.getAttribute('data-yt');if(u)window.open(u,'_blank','noopener');},true);
 document.getElementById('sbBrand').addEventListener('click',function(e){
   e.preventDefault();window.scrollTo({top:0,behavior:'smooth'});});
 document.getElementById('backTop').addEventListener('click',function(){
